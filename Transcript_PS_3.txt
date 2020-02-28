@@ -1,0 +1,1823 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20200228094725
+Nombre de usuario: LAPTOP-J7QJJ8HN\Juan Camilo
+Usuario RunAs: LAPTOP-J7QJJ8HN\Juan Camilo
+Nombre de la configuración: 
+Máquina: LAPTOP-J7QJJ8HN (Microsoft Windows NT 10.0.18363.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Id. de proceso: 15948
+PSVersion: 5.1.18362.628
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.628
+BuildVersion: 10.0.18362.628
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Juan Camilo\Documents\PowerShell_transcript.LAPTOP-J7QJJ8HN.X_QIUB7x.20200228094725.txt
+PS C:\Users\Juan Camilo> cd Escritorio
+cd : No se encuentra la ruta de acceso 'C:\Users\Juan Camilo\Escritorio' porque no existe.
+En línea: 1 Carácter: 1
++ cd Escritorio
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Juan Camilo\Escritorio:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\Juan Camilo\Escritorio' porque no
+existe.
+En línea: 1 Carácter: 1
++ cd Escritorio
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Juan Camilo\Escritorio:Str
+   ing) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocati
+   onCommand
+
+PS C:\Users\Juan Camilo> cd desktop
+PS C:\Users\Juan Camilo\desktop> diff (Get-Content texto1.txt) (Get-Content texto2.txt)
+
+InputObject               SideIndicator
+-----------               -------------
+Este es el segundo texto  =>
+Sisa                      =>
+este es el primer archivo <=
+
+
+PS C:\Users\Juan Camilo\desktop> get-service | export-csv servicios.csv | out-file
+>> ErrorTerminación(Out-File): "No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del argumento "path" a un valor no nulo."
+out-file : No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del 
+argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : No se puede procesar el argumento porque el valor del argumento "path"
+es NULL. Cambie el valor del argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullExcep
+   tion
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCo
+   mmand
+
+PS C:\Users\Juan Camilo\desktop> ..
+.. : El término '..' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ ..
++ ~~
+    + CategoryInfo          : ObjectNotFound: (..:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+.. : El término '..' no se reconoce como nombre de un cmdlet, función, archivo de
+script o programa ejecutable. Compruebe si escribió correctamente el nombre o, si
+incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de
+nuevo.
+En línea: 1 Carácter: 1
++ ..
++ ~~
+    + CategoryInfo          : ObjectNotFound: (..:String) [], CommandNotFoundExcep
+   tion
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Juan Camilo\desktop> cd ..
+PS C:\Users\Juan Camilo> get-service | export-csv servicios.csv | out-file
+>> ErrorTerminación(Out-File): "No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del argumento "path" a un valor no nulo."
+out-file : No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del 
+argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : No se puede procesar el argumento porque el valor del argumento "path"
+es NULL. Cambie el valor del argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullExcep
+   tion
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCo
+   mmand
+
+PS C:\Users\Juan Camilo> get-service | export-csv servicios.csv | Out-File
+>> ErrorTerminación(Out-File): "No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del argumento "path" a un valor no nulo."
+Out-File : No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del 
+argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | Out-File
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
+Out-File : No se puede procesar el argumento porque el valor del argumento "path"
+es NULL. Cambie el valor del argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | Out-File
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullExcep
+   tion
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCo
+   mmand
+
+PS C:\Users\Juan Camilo> help *Export-Csv servicios.csv
+>> ErrorTerminación(help): "No se encuentra ningún parámetro de posición que acepte el argumento 'servicios.csv'."
+help : No se encuentra ningún parámetro de posición que acepte el argumento 'servicios.csv'.
+En línea: 1 Carácter: 1
++ help *Export-Csv servicios.csv
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [help], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,help
+help : No se encuentra ningún parámetro de posición que acepte el argumento
+'servicios.csv'.
+En línea: 1 Carácter: 1
++ help *Export-Csv servicios.csv
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [help], ParameterBindingExcepti
+   on
+    + FullyQualifiedErrorId : PositionalParameterNotFound,help
+
+PS C:\Users\Juan Camilo> help *Export-Csv servicios.csv*
+>> ErrorTerminación(help): "No se encuentra ningún parámetro de posición que acepte el argumento 'servicios.csv*'."
+help : No se encuentra ningún parámetro de posición que acepte el argumento 'servicios.csv*'.
+En línea: 1 Carácter: 1
++ help *Export-Csv servicios.csv*
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [help], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,help
+help : No se encuentra ningún parámetro de posición que acepte el argumento
+'servicios.csv*'.
+En línea: 1 Carácter: 1
++ help *Export-Csv servicios.csv*
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [help], ParameterBindingExcepti
+   on
+    + FullyQualifiedErrorId : PositionalParameterNotFound,help
+
+PS C:\Users\Juan Camilo> help *Export-Csv*
+
+NOMBRE
+    Export-Csv
+
+SINOPSIS
+    Converts objects into a series of comma-separated (CSV) strings and saves the
+    strings in a CSV file.
+
+
+SINTAXIS
+    Export-Csv [[-Path] <String>] [[-Delimiter] <Char>] [-Append] [-Confirm]
+    [-Encoding {Unicode | UTF7 | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default
+    | OEM}] [-Force] -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber]
+    [-NoTypeInformation] [-WhatIf] [<CommonParameters>]
+
+    Export-Csv [[-Path] <String>] [-Append] [-Confirm] [-Encoding {Unicode | UTF7
+    | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default | OEM}] [-Force]
+    -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber]
+    [-NoTypeInformation] [-UseCulture] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Export-CSV cmdlet creates a CSV file of the objects that you submit. Each
+    object is represented as a line or row of the CSV. The row consists of a
+    comma-separated list of the values of object properties. You can use this
+    cmdlet to create spreadsheets and share data with programs that take CSV files
+    as input.
+
+    Do not format objects before sending them to the Export-CSV cmdlet. If you do,
+    the format properties are represented in the CSV file, instead of the
+    properties of the original objects. To export only selected properties of an
+    object, use the Select-Object cmdlet.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821769
+    ConvertFrom-Csv
+    ConvertTo-Csv
+    Format-Table
+    Import-Csv
+    Select-Object
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Export-Csv -examples".
+    Para obtener más información, escriba: "get-help Export-Csv -detailed".
+    Para obtener información técnica, escriba: "get-help Export-Csv -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Export-Csv -online"
+
+
+PS C:\Users\Juan Camilo> Get-Service | Export-Csv servicios.csv -Delimiter ';'
+PS C:\Users\Juan Camilo> help *Export-Clixml*
+
+NOMBRE
+    Export-Clixml
+
+SINOPSIS
+    Creates an XML-based representation of an object or objects and stores it in a
+    file.
+
+
+SINTAXIS
+    Export-Clixml [-Confirm] [-Depth <Int32>] [-Encoding {Unicode | UTF7 | UTF8 |
+    ASCII | UTF32 | BigEndianUnicode | Default | OEM}] [-Force] -InputObject
+    <PSObject> -LiteralPath <String> [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+    Export-Clixml [-Path] <String> [-Confirm] [-Depth <Int32>] [-Encoding {Unicode
+    | UTF7 | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default | OEM}] [-Force]
+    -InputObject <PSObject> [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Export-CliXml cmdlet creates an XML-based representation of an object or
+    objects and stores it in a file. You can then use the Import-Clixml cmdlet to
+    re-create the saved object based on the contents of that file.
+
+    This cmdlet is similar to ConvertTo-Xml, except that Export-CliXml stores the
+    resulting XML in a file. ConvertTo-XML returns the XML, so you can continue to
+    process it in Windows PowerShell.
+
+    A valuable use of Export-CliXml is to export credentials and secure strings
+    securely as XML. For an example of how to do this, see Example 3.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821767
+    Use PowerShell to Pass Credentials to Legacy Systems http://blogs.technet.com/b
+    /heyscriptingguy/archive/2011/06/05/use-powershell-to-pass-credentials-to-legac
+    y-systems.aspx
+    Securely Store Credentials on Disk http://www.powershellcookbook.com/recipe/Puk
+    O/securely-store-credentials-on-disk
+    ConvertTo-Html
+    ConvertTo-Xml
+    Export-Csv
+    Import-Clixml
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Export-Clixml -examples".
+    Para obtener más información, escriba: "get-help Export-Clixml -detailed".
+    Para obtener información técnica, escriba: "get-help Export-Clixml -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Export-Clixml
+-online"
+
+
+PS C:\Users\Juan Camilo> help *Export-Clixml -NoClobber*
+>> ErrorTerminación(help): "No se encuentra ningún parámetro que coincida con el nombre del parámetro 'NoClobber*'."
+help : No se encuentra ningún parámetro que coincida con el nombre del parámetro 'NoClobber*'.
+En línea: 1 Carácter: 21
++ help *Export-Clixml -NoClobber*
++                     ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [help], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,help
+help : No se encuentra ningún parámetro que coincida con el nombre del parámetro
+'NoClobber*'.
+En línea: 1 Carácter: 21
++ help *Export-Clixml -NoClobber*
++                     ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [help], ParameterBindingExcepti
+   on
+    + FullyQualifiedErrorId : NamedParameterNotFound,help
+
+PS C:\Users\Juan Camilo> Get-Help Export-Clixml -NoClobber
+>> ErrorTerminación(Get-Help): "No se encuentra ningún parámetro que coincida con el nombre del parámetro 'NoClobber'."
+Get-Help : No se encuentra ningún parámetro que coincida con el nombre del parámetro 'NoClobber'.
+En línea: 1 Carácter: 24
++ Get-Help Export-Clixml -NoClobber
++                        ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Help], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : No se encuentra ningún parámetro que coincida con el nombre del
+parámetro 'NoClobber'.
+En línea: 1 Carácter: 24
++ Get-Help Export-Clixml -NoClobber
++                        ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Help], ParameterBindingExc
+   eption
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands
+   .GetHelpCommand
+
+PS C:\Users\Juan Camilo> Get-Help Export-Clixml -Detailed
+
+NOMBRE
+    Export-Clixml
+
+SINOPSIS
+    Creates an XML-based representation of an object or objects and stores it in a
+    file.
+
+
+SINTAXIS
+    Export-Clixml [-Confirm] [-Depth <Int32>] [-Encoding {Unicode | UTF7 | UTF8 |
+    ASCII | UTF32 | BigEndianUnicode | Default | OEM}] [-Force] -InputObject
+    <PSObject> -LiteralPath <String> [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+    Export-Clixml [-Path] <String> [-Confirm] [-Depth <Int32>] [-Encoding {Unicode
+    | UTF7 | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default | OEM}] [-Force]
+    -InputObject <PSObject> [-NoClobber] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Export-CliXml cmdlet creates an XML-based representation of an object or
+    objects and stores it in a file. You can then use the Import-Clixml cmdlet to
+    re-create the saved object based on the contents of that file.
+
+    This cmdlet is similar to ConvertTo-Xml, except that Export-CliXml stores the
+    resulting XML in a file. ConvertTo-XML returns the XML, so you can continue to
+    process it in Windows PowerShell.
+
+    A valuable use of Export-CliXml is to export credentials and secure strings
+    securely as XML. For an example of how to do this, see Example 3.
+
+
+PARÁMETROS
+    -Confirm [<SwitchParameter>]
+        Prompts you for confirmation before running the cmdlet.
+
+    -Depth <Int32>
+        Specifies how many levels of contained objects are included in the XML
+        representation. The default value is 2.
+
+        The default value can be overridden for the object type in the
+        Types.ps1xml files. For more information, see about_Types.ps1xml.
+
+    -Encoding <String>
+        Specifies the type of encoding for the target file. The acceptable values
+        for this parameter are:
+
+        - ASCII
+
+        - UTF8
+
+        - UTF7
+
+        - UTF32
+
+        - Unicode
+
+        - BigEndianUnicode
+
+        - Default
+
+        - OEM
+
+
+        The default value is Unicode.
+
+
+    -Force [<SwitchParameter>]
+        Forces the command to run without asking for user confirmation.
+
+        Causes the cmdlet to clear the read-only attribute of the output file if
+        necessary.  The cmdlet will attempt to reset the read-only attribute when
+        the command completes.
+
+    -InputObject <PSObject>
+        Specifies the object to be converted. Enter a variable that contains the
+        objects, or type a command or expression that gets the objects. You can
+        also pipe objects to Export-Clixml .
+
+    -LiteralPath <String>
+        Specifies the path to the file where the XML representation of the object
+        will be stored. Unlike Path , the value of the LiteralPath parameter is
+        used exactly as it is typed. No characters are interpreted as wildcards.
+        If the path includes escape characters, enclose it in single quotation
+        marks. Single quotation marks tell Windows PowerShell not to interpret any
+        characters as escape sequences.
+
+    -NoClobber [<SwitchParameter>]
+        Indicates that that the cmdlet does not overwrite the contents of an
+        existing file. By default, if a file exists in the specified path,
+        Export-Clixml overwrites the file without warning.
+
+    -Path <String>
+        Specifies the path to the file where the XML representation of the object
+        will be stored.
+
+    -WhatIf [<SwitchParameter>]
+        Shows what would happen if the cmdlet runs. The cmdlet is not run.
+
+    <CommonParameters>
+        Este cmdlet admite los parámetros comunes: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable y OutVariable. Para obtener más información,
+    consulta
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+    Example 1: Export a string to an XML file
+
+    PS C:\>"This is a test" | Export-Clixml sample.xml
+
+    This command creates an XML file that stores a representation of the string,
+    "This is a test".
+    Example 2: Export an object to an XML file
+
+    PS C:\>Get-Acl C:\test.txt | Export-Clixml -Path "fileacl.xml"
+    PS C:\> $Fileacl = Import-Clixml "fileacl.xml"
+
+    This example shows how to export an object to an XML file and then create an
+    object by importing the XML from the file.
+
+    The first command uses the Get-Acl cmdlet to get the security descriptor of
+    the Test.txt file. It uses a pipeline operator to pass the security descriptor
+    to Export-Clixml , which stores an XML-based representation of the object in a
+    file named FileACL.xml.
+
+    The second command uses the Import-Clixml cmdlet to create an object from the
+    XML in the FileACL.xml file. Then, it saves the object in the $FileAcl
+    variable.
+    Example 3: Encrypt an exported credential object
+
+    PS C:\>$CredXmlPath = Join-Path (Split-Path $Profile) TestScript.ps1.credential
+    PS C:\>$credential | Export-CliXml $CredPath
+    PS C:\>$CredXmlPath = Join-Path (Split-Path $Profile) TestScript.ps1.credential
+    PS C:\>$Credential = Import-CliXml $CredXmlPath
+
+    The Export-CliXml cmdlet encrypts credential objects by using the Windows Data
+    Protection
+    APIhttp://msdn.microsoft.com/library/windows/apps/xaml/hh464970.aspx. This
+    ensures that only your user account can decrypt the contents of the credential
+    object.
+
+    In this example, given a credential that you've stored in the $Credential
+    variable by running the Get-Credential cmdlet, you can run the Export-CliXml
+    cmdlet to save the credential to disk.In the example, the file in which the
+    credential is stored is represented by TestScript.ps1.credential. Replace
+    TestScript with the name of the script with which you are loading the
+    credential.
+
+    In the second command, pipe the credential object to Export-CliXml , and save
+    it to the path, $CredXmlPath, that you specified in the first command.
+
+    To import the credential automatically into your script, run the final two
+    commands. This time, you are running Import-Clixml to import the secured
+    credential object into your script. This eliminates the risk of exposing
+    plain-text passwords in your script.
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Export-Clixml -examples".
+    Para obtener más información, escriba: "get-help Export-Clixml -detailed".
+    Para obtener información técnica, escriba: "get-help Export-Clixml -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Export-Clixml
+-online"
+
+
+PS C:\Users\Juan Camilo> Get-Help Export-Csv -Detailed
+
+NOMBRE
+    Export-Csv
+
+SINOPSIS
+    Converts objects into a series of comma-separated (CSV) strings and saves the
+    strings in a CSV file.
+
+
+SINTAXIS
+    Export-Csv [[-Path] <String>] [[-Delimiter] <Char>] [-Append] [-Confirm]
+    [-Encoding {Unicode | UTF7 | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default
+    | OEM}] [-Force] -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber]
+    [-NoTypeInformation] [-WhatIf] [<CommonParameters>]
+
+    Export-Csv [[-Path] <String>] [-Append] [-Confirm] [-Encoding {Unicode | UTF7
+    | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default | OEM}] [-Force]
+    -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber]
+    [-NoTypeInformation] [-UseCulture] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Export-CSV cmdlet creates a CSV file of the objects that you submit. Each
+    object is represented as a line or row of the CSV. The row consists of a
+    comma-separated list of the values of object properties. You can use this
+    cmdlet to create spreadsheets and share data with programs that take CSV files
+    as input.
+
+    Do not format objects before sending them to the Export-CSV cmdlet. If you do,
+    the format properties are represented in the CSV file, instead of the
+    properties of the original objects. To export only selected properties of an
+    object, use the Select-Object cmdlet.
+
+
+PARÁMETROS
+    -Append [<SwitchParameter>]
+        Indicates that this cmdlet adds the CSV output to the end of the specified
+        file. Without this parameter, Export-CSV replaces the file contents
+        without warning.
+
+        This parameter was introduced in Windows PowerShell 3.0.
+
+    -Confirm [<SwitchParameter>]
+        Prompts you for confirmation before running the cmdlet.
+
+    -Delimiter <Char>
+        Specifies a delimiter to separate the property values. The default is a
+        comma (,). Enter a character, such as a colon (:). To specify a semicolon
+        (;), enclose it in quotation marks.
+
+    -Encoding <String>
+        Specifies the encoding for the exported CSV file. The acceptable values
+        for this parameter are:
+
+        - Unicode
+
+        - UTF7
+
+        - UTF8
+
+        - ASCII
+
+        - UTF32
+
+        - BigEndianUnicode
+
+        - Default
+
+        - OEM
+
+
+        The default value is ASCII.
+
+
+    -Force [<SwitchParameter>]
+        Forces the command to run without asking for user confirmation.
+
+    -InputObject <PSObject>
+        Specifies the objects to export as CSV strings. Enter a variable that
+        contains the objects or type a command or expression that gets the
+        objects. You can also pipe objects to Export-CSV .
+
+    -LiteralPath <String>
+        Specifies the path to the CSV output file. Unlike Path , the value of the
+        LiteralPath parameter is used exactly as it is typed. No characters are
+        interpreted as wildcards. If the path includes escape characters, enclose
+        it in single quotation marks. Single quotation marks tell Windows
+        PowerShell not to interpret any characters as escape sequences.
+
+    -NoClobber [<SwitchParameter>]
+        Indicates that this cmdlet does not overwrite of an existing file. By
+        default, if a file exists in the specified path, Export-CSV overwrites the
+        file without warning.
+
+    -NoTypeInformation [<SwitchParameter>]
+        Indicates that this cmdlet omits the type information from the CSV file.
+        By default, the first line of the CSV file contains #TYPE followed by the
+        fully-qualified name of the type of the object.
+
+    -Path <String>
+        Specifies the path to the CSV output file. This parameter is required.
+
+    -UseCulture [<SwitchParameter>]
+        Indicates that this cmdlet uses the list separator for the current culture
+        as the item delimiter. The default is a comma (,).
+
+        This parameter is very useful in scripts that are being distributed to
+        users worldwide. To find the list separator for a culture, use the
+        following command: `(Get-Culture).TextInfo.ListSeparator`.
+
+    -WhatIf [<SwitchParameter>]
+        Shows what would happen if the cmdlet runs. The cmdlet is not run.
+
+    <CommonParameters>
+        Este cmdlet admite los parámetros comunes: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable y OutVariable. Para obtener más información,
+    consulta
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+    Example 1: Export process properties
+
+    PS C:\>Get-Process wmiprvse | Select-Object
+    basePriority,ID,SessionID,WorkingSet | Export-Csv -Path "data.csv"
+
+    This command selects a few properties of the WmiPrvse process and exports them
+    to a CSV file named Data.csv.
+    Example 2: Export processes to a comma-delimited file
+
+    PS C:\>Get-Process | Export-Csv -Path "processes.csv"
+    # In processes.csv
+    #TYPE System.Diagnostics.Process
+    __NounName,Name,Handles,VM,WS,PM,NPM,Path,Company,CPU,FileVersion,...
+    Process,powershell,626,201666560,76058624,61943808,11960,C:\WINDOWS...
+    Process,powershell,257,151920640,38322176,37052416,7836,C:\WINDOWS\...
+
+    This command exports objects representing the processes on the computer to the
+    Processes.csv file in the current directory. Because it does not specify a
+    delimiter, a comma (,) is used to separate the fields in the file.
+    Example 3: Export processes to a semicolon-delimited file
+
+    PS C:\>Get-Process | Export-Csv -Path "processes.csv" -Delimiter ";"
+    # In processes.csv
+    #TYPE System.Diagnostics.Process
+    __NounName;Name;Handles;VM;WS;PM;NPM;Path;Company;CPU;FileVersion;...
+    Process;powershell;626;201666560;76058624;61943808;11960;C:\WINDOWS...
+    Process;powershell;257;151920640;38322176;37052416;7836;C:\WINDOWS\...
+
+    This command exports objects representing the processes on the computer to the
+    Processes.csv file in the current directory. It uses the Delimiter parameter
+    to specify the semicolon (;). As a result, the fields in the file are
+    separated by semicolons.
+    Example 4: Export using the list separator of the current culture
+
+    PS C:\>Get-Process | Export-Csv -Path "processes.csv" -UseCulture
+
+    This command exports objects representing the processes on the computer to the
+    Processes.csv file in the current directory. It uses the UseCulture parameter
+    to direct Export-CSV to use the delimiter specified by the ListSeparator
+    property of the current culture.
+    Example 5: Export processes without type information
+
+    PS C:\>Get-Process | Export-Csv -Path "processes.csv" -NoTypeInformation
+    # In processes.csv
+    __NounName,Name,Handles,VM,WS,PM,NPM,Path,Company,CPU,FileVersion,...
+    Process,powershell,626,201666560,76058624,61943808,11960,C:\WINDOWS...
+    Process,powershell,257,151920640,38322176,37052416,7836,C:\WINDOWS\...
+
+    This command exports objects representing the processes on the computer to the
+    Processes.csv file in the current directory. It uses the NoTypeInformation
+    parameter to suppress the type information in the file.
+    Example 6: Export and append script properties
+
+    PS C:\>$ScriptFiles = Get-ChildItem D:\* -Include *.ps1 -Recurse |
+    Where-Object {$_.creationtime -gt "01/01/2011"}
+
+    The second command uses the Select-Object cmdlet to select the relevant
+    properties of the script files. It saves the revised results in the
+    ScriptFiles variable.
+    PS C:\>$ScriptFiles = $ScriptFiles | Select-Object -Property Name,
+    CreationTime, LastWriteTime, IsReadOnly
+
+    The third command uses a pipeline operator (|) to send the script file
+    information in the ScriptFiles variable to the **Export-CSV** cmdlet. The
+    command uses the Path parameter to specify the output file and the *Append*
+    parameter to add the new script data to the end of the output file, instead of
+    replacing the existing file contents.
+    PS C:\>$ScriptFiles | Export-Csv -Append -Path
+    "\\Archive01\Scripts\Scripts.csv"
+
+    These commands add information about new Windows PowerShell scripts to a
+    script inventory file.
+
+    The first command uses the Get-ChildItem cmdlet to do a recursive search in
+    the D: drive for files with the .ps1 file name extension. It uses a pipeline
+    operator to sends the results to the Where-Object cmdlet, which gets only
+    files that were created after January 1, 2011, and then saves them in the
+    $ScriptFiles variable.
+    Example 7: Select properties to export
+
+    The first command shows how to select properties of an object and export them
+    to a CSV file. This command uses the Get-Date cmdlet to get the current date
+    and time. It uses the **Select-Object** cmdlet to select the desired
+    properties, and the **Export-CSV** cmdlet to export the object and its
+    properties to the Date.csv file. The output shows the expected content in the
+    Date.csv file.
+    PS C:\>Get-Date | Select-Object -Property DateTime, Day, DayOfWeek, DayOfYear
+    | Export-Csv -Path Date.csv
+    #In Date.csv:"DateTime","Day","DayOfWeek","DayOfYear""Tuesday, October 05,
+    2010 2:45:13 PM","5","Tuesday","278"
+
+    The second command shows that when you use the **Format-Table** cmdlet to
+    format your data before exporting it, the output is not useful.
+    PS C:\>Get-Date | Format-Table -Property DateTime, Day, DayOfWeek, DayOfYear |
+    Export-Csv -Path Date.csv
+    #In Date.csv: "ClassId2e4f51ef21dd47e99d3c952918aff9cd","pageHeaderEntry","page
+    FooterEntry","autosizeInfo","shapeInfo","groupingEntry"
+    "033ecb2bc07a4d43b5ef94ed5a35d280",,,,"Microsoft.PowerShell.Commands.Internal.F
+    ormat.TableHeaderInfo","9e210fe47d09416682b841769c78b8a3"
+    ,,,,,"27c87ef9bbda4f709f6b4002fa4af63c",,,,,"4ec4f0187cb04f4cb6973460dfe252df",
+    ,,,,"cf522b78d86c486691226b40aa69e95c",,,,,
+
+    This example demonstrates one of most common problems that users encounter
+    when using the Export-CSV cmdlet. It explains how to recognize and avoid this
+    error.
+
+    Because a CSV file has a table format, it might seem natural to use the
+    Format-Table cmdlet to format the data in a table to prepare it for export as
+    a CSV file. Also, the Format-Table cmdlet allows you to select object
+    properties easily.
+
+    However, when you format the data in a table and then export it, you are
+    exporting a table object, not your original data object. The resulting CSV
+    file is not useful.
+
+    This example shows how to select object properties by using the Select-Object
+    cmdlet, and it shows the Export-CSV formats the data correctly in a CSV file
+    without any preparatory formatting by another cmdlet.
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Export-Csv -examples".
+    Para obtener más información, escriba: "get-help Export-Csv -detailed".
+    Para obtener información técnica, escriba: "get-help Export-Csv -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Export-Csv -online"
+
+
+PS C:\Users\Juan Camilo> Get-Help (Export-Csv csvSistema.csv -Delimiter) -Detailed
+>> ErrorTerminación(Export-Csv): "Falta un argumento para el parámetro 'Delimiter'. Especifique un parámetro del tipo 'System.Char' e inténtelo de nuevo."
+Export-Csv : Falta un argumento para el parámetro 'Delimiter'. Especifique un parámetro del tipo 'System.Char' e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 37
++ Get-Help (Export-Csv csvSistema.csv -Delimiter) -Detailed
++                                     ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Export-Csv], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.ExportCsvCommand
+Export-Csv : Falta un argumento para el parámetro 'Delimiter'. Especifique un
+parámetro del tipo 'System.Char' e inténtelo de nuevo.
+En línea: 1 Carácter: 37
++ Get-Help (Export-Csv csvSistema.csv -Delimiter) -Detailed
++                                     ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Export-Csv], ParameterBindingE
+   xception
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.Export
+   CsvCommand
+
+PS C:\Users\Juan Camilo> help Get-Process -Full
+
+NOMBRE
+    Get-Process
+
+SINOPSIS
+    Gets the processes that are running on the local computer or a remote computer.
+
+
+SINTAXIS
+    Get-Process [[-Name] <String[]>] [-ComputerName <String[]>] [-FileVersionInfo]
+    [-Module] [<CommonParameters>]
+
+    Get-Process [-ComputerName <String[]>] [-FileVersionInfo] -Id <Int32[]>
+    [-Module] [<CommonParameters>]
+
+    Get-Process [-ComputerName <String[]>] [-FileVersionInfo] -InputObject
+    <Process[]> [-Module] [<CommonParameters>]
+
+    Get-Process -Id <Int32[]> -IncludeUserName [<CommonParameters>]
+
+    Get-Process [[-Name] <String[]>] -IncludeUserName [<CommonParameters>]
+
+    Get-Process -IncludeUserName -InputObject <Process[]> [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Process cmdlet gets the processes on a local or remote computer.
+
+    Without parameters, this cmdlet gets all of the processes on the local
+    computer. You can also specify a particular process by process name or process
+    ID (PID) or pass a process object through the pipeline to this cmdlet.
+
+    By default, this cmdlet returns a process object that has detailed information
+    about the process and supports methods that let you start and stop the
+    process. You can also use the parameters of the Get-Process cmdlet to get file
+    version information for the program that runs in the process and to get the
+    modules that the process loaded.
+
+
+PARÁMETROS
+    -ComputerName <String[]>
+        Specifies the computers for which this cmdlet gets active processes. The
+        default is the local computer.
+
+        Type the NetBIOS name, an IP address, or a fully qualified domain name
+        (FQDN) of one or more computers. To specify the local computer, type the
+        computer name, a dot (.), or localhost.
+
+        This parameter does not rely on Windows PowerShell remoting. You can use
+        the ComputerName parameter of this cmdlet even if your computer is not
+        configured to run remote commands.
+
+        ¿Requerido?                  false
+        ¿Posición?                   named
+        Valor predeterminado         None
+        ¿Aceptar canalización?       True (ByPropertyName)
+        ¿Aceptar caracteres comodín? false
+
+    -FileVersionInfo [<SwitchParameter>]
+        Indicates that this cmdlet gets the file version information for the
+        program that runs in the process.
+
+        On Windows Vista and later versions of Windows, you must open Windows
+        PowerShell with the Run as administrator option to use this parameter on
+        processes that you do not own.
+
+        You cannot use the FileVersionInfo and ComputerName parameters of the
+        Get-Process cmdlet in the same command. To get file version information
+        for a process on a remote computer, use the Invoke-Command cmdlet.
+
+        Using this parameter is equivalent to getting the
+        MainModule.FileVersionInfo property of each process object. When you use
+        this parameter, Get-Process returns a FileVersionInfo object
+        (System.Diagnostics.FileVersionInfo), not a process object. So, you cannot
+        pipe the output of the command to a cmdlet that expects a process object,
+        such as Stop-Process.
+
+        ¿Requerido?                  false
+        ¿Posición?                   named
+        Valor predeterminado         False
+        ¿Aceptar canalización?       False
+        ¿Aceptar caracteres comodín? false
+
+    -Id <Int32[]>
+        Specifies one or more processes by process ID (PID). To specify multiple
+        IDs, use commas to separate the IDs. To find the PID of a process, type
+        `Get-Process`.
+
+        ¿Requerido?                  true
+        ¿Posición?                   named
+        Valor predeterminado         None
+        ¿Aceptar canalización?       True (ByPropertyName)
+        ¿Aceptar caracteres comodín? false
+
+    -IncludeUserName [<SwitchParameter>]
+        Indicates that the UserName value of the Process object is returned with
+        results of the command.
+
+        ¿Requerido?                  true
+        ¿Posición?                   named
+        Valor predeterminado         False
+        ¿Aceptar canalización?       False
+        ¿Aceptar caracteres comodín? false
+
+    -InputObject <Process[]>
+        Specifies one or more process objects. Enter a variable that contains the
+        objects, or type a command or expression that gets the objects.
+
+        ¿Requerido?                  true
+        ¿Posición?                   named
+        Valor predeterminado         None
+        ¿Aceptar canalización?       True (ByValue)
+        ¿Aceptar caracteres comodín? false
+
+    -Module [<SwitchParameter>]
+        Indicates that this cmdlet gets the modules that have been loaded by the
+        processes.
+
+        On Windows Vista and later versions of Windows, you must open Windows
+        PowerShell with the Run as administrator option to use this parameter on
+        processes that you do not own.
+
+        You cannot use the Module and ComputerName parameters of the Get-Process
+        cmdlet in the same command. To get the modules that have been loaded by a
+        process on a remote computer, use the Invoke-Command cmdlet.
+
+        This parameter is equivalent to getting the Modules property of each
+        process object. When you use this parameter, this cmdlet returns a
+        ProcessModule object (System.Diagnostics.ProcessModule), not a process
+        object. So, you cannot pipe the output of the command to a cmdlet that
+        expects a process object, such as Stop-Process.
+
+        When you use both the Module and FileVersionInfo parameters in the same
+        command, this cmdlet returns a FileVersionInfo object with information
+        about the file version of all modules.
+
+        ¿Requerido?                  false
+        ¿Posición?                   named
+        Valor predeterminado         False
+        ¿Aceptar canalización?       False
+        ¿Aceptar caracteres comodín? false
+
+    -Name <String[]>
+        Specifies one or more processes by process name. You can type multiple
+        process names (separated by commas) and use wildcard characters. The
+        parameter name ("Name") is optional.
+
+        ¿Requerido?                  false
+        ¿Posición?                   0
+        Valor predeterminado         None
+        ¿Aceptar canalización?       True (ByPropertyName)
+        ¿Aceptar caracteres comodín? false
+
+    <CommonParameters>
+        Este cmdlet admite los parámetros comunes: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable y OutVariable. Para obtener más información,
+    consulta
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+ENTRADAS
+    System.Diagnostics.Process
+        You can pipe a process object to this cmdlet.
+
+
+SALIDAS
+    System.Diagnostics.Process, System.Diagnotics.FileVersionInfo,
+    System.Diagnostics.ProcessModule
+        By default, this cmdlet returns a System.Diagnostics.Process object. If
+        you use the FileVersionInfo parameter, it returns a
+        System.Diagnotics.FileVersionInfo object. If you use the Module parameter,
+        without the FileVersionInfo parameter, it returns a
+        System.Diagnostics.ProcessModule object.
+
+
+NOTAS
+
+
+        * You can also refer to this cmdlet by its built-in aliases, ps and gps.
+        For more information, see about_Aliases.
+
+        * On computers that are running a 64-bit version of Windows, the 64-bit
+        version of Windows PowerShell gets only 64-bit process modules and the
+        32-bit version of Windows PowerShell gets only 32-bit process modules.
+
+        * You can use the properties and methods of the Windows Management
+        Instrumentation (WMI) Win32_Process object in Windows PowerShell. For
+        information, see Get-WmiObject and the WMI SDK.
+
+        * The default display of a process is a table that includes the following
+        columns. For a description of all of the properties of process objects,
+        see Process Propertieshttp://go.microsoft.com/fwlink/?LinkId=204482 at
+        http://go.microsoft.com/fwlink/?LinkId=204482.
+
+
+        - Handles: The number of handles that the process has opened.
+
+        - NPM(K): The amount of non-paged memory that the process is using, in
+        kilobytes.
+
+        - PM(K): The amount of pageable memory that the process is using, in
+        kilobytes.
+
+        - WS(K): The size of the working set of the process, in kilobytes. The
+        working set consists of the pages of memory that were recently referenced
+        by the process.
+
+        - VM(M): The amount of virtual memory that the process is using, in
+        megabytes. Virtual memory includes storage in the paging files on disk.
+
+        - CPU(s): The amount of processor time that the process has used on all
+        processors, in seconds.
+
+        - ID: The process ID (PID) of the process.
+
+        - ProcessName: The name of the process.
+
+        For explanations of the concepts related to processes, see the Glossary in
+        Help and Support Center and the Help for Task Manager.
+        * You can also use the built-in alternate views of the processes available
+        with Format-Table, such as StartTime and Priority, and you can design your
+        own views.
+
+
+    Example 1: Get a list of all active processes on the local computer
+
+    PS C:\>Get-Process
+
+    This command gets a list of all active processes running on the local
+    computer. For a definition of each column, see the "Additional Notes" section
+    of the Help topic for Get-Help.
+    Example 2: Get all available data about one or more processes
+
+    PS C:\>Get-Process winword, explorer | Format-List *
+
+    This command gets all available data about the Winword and Explorer processes
+    on the computer. It uses the Name parameter to specify the processes, but it
+    omits the optional parameter name. The pipeline operator (|) passes the data
+    to the Format-List cmdlet, which displays all available properties (*) of the
+    Winword and Explorer process objects.
+
+    You can also identify the processes by their process IDs. For instance,
+    `Get-Process -Id 664, 2060`.
+    Example 3: Get all processes with a working set greater than a specified size
+
+    PS C:\>Get-Process | Where-Object {$_.WorkingSet -gt 20000000}
+
+    This command gets all processes that have a working set greater than 20 MB. It
+    uses the Get-Process cmdlet to get all running processes. The pipeline
+    operator (|) passes the process objects to the Where-Object cmdlet, which
+    selects only the object with a value greater than 20,000,000 bytes for the
+    WorkingSet property. WorkingSet is one of many properties of process objects.
+    To see all of the properties, type `Get-Process | Get-Member`. By default, the
+    values of all amount properties are in bytes, even though the default display
+    lists them in kilobytes and megabytes.
+    Example 4: List processes on the computer in groups based on priority
+
+    PS C:\>$A = Get-Process PS C:\>Get-Process -InputObject $A | Format-Table
+    -View priority
+
+    These commands list the processes on the computer in groups based on their
+    priority class. The first command gets all the processes on the computer and
+    then stores them in the $A variable.
+
+    The second command uses the InputObject parameter to pass the process objects
+    that are stored in the $A variable to the Get-Process cmdlet. The pipeline
+    operator passes the objects to the Format-Table cmdlet, which formats the
+    processes by using the Priority view. The Priority view, and other views, are
+    defined in the PS1XML format files in the Windows PowerShell home directory
+    ($pshome).
+    Example 5: Add a property to the standard Get-Process output display
+
+    PS C:\>Get-Process Powershell -ComputerName S1, localhost | ft
+    @{Label="NPM(K)";Expression={[int]($_.NPM/1024)}}, @{Label="PM(K)";Expression={
+    [int]($_.PM/1024)}},@{Label="WS(K)";Expression={[int]($_.WS/1024)}},@{Label="VM
+    (M)";Expression={[int]($_.VM/1MB)}}, @{Label="CPU(s)";Expression={if ($_.CPU
+    -ne $()) { $_.CPU.ToString("N")}}}, Id, MachineName, ProcessName -Auto
+
+
+
+
+
+
+    NPM(K) PM(K) WS(K) VM(M) CPU(s)   Id MachineName ProcessName
+    ------ ----- ----- ----- ------   -- ----------- -----------
+    6      23500 31340   142        1980 S1          powershell
+    6      23500 31348   142        4016 S1          powershell
+    27     54572 54520   576        4428 localhost   powershell
+
+    This example provides a Format-Table (alias = ft) command that adds the
+    MachineName property to the standard Get-Process output display.
+    Example 6: Get version information for a process
+
+    PS C:\>Get-Process powershell -FileVersionInfo
+
+
+
+
+    ProductVersion   FileVersion      FileName
+    --------------   -----------      --------
+    6.1.6713.1       6.1.6713.1 (f...
+    C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+
+    This command uses the FileVersionInfo parameter to get the version information
+    for the PowerShell.exe file that is the main module for the PowerShell process.
+
+    To run this command with processes that you do not own on Windows Vista and
+    later versions of Windows, you must open Windows PowerShell with the Run as
+    administrator option.
+    Example 7: Get modules loaded with the specified process
+
+    PS C:\>Get-Process SQL* -Module
+
+    This command uses the Module parameter to get the modules that have been
+    loaded by the process. This command gets the modules for the processes that
+    have names that begin with SQL.
+
+    To run this command on Windows Vista and later versions of Windows with
+    processes that you do not own, you must start Windows PowerShell with the Run
+    as administrator option.
+    Example 8: Find the owner of a process
+
+    PS C:\>$P = Get-WmiObject win32_process -Filter "name='powershell.exe'"
+    PS C:\>$P.getowner()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    __GENUS          : 2
+    __CLASS          : __PARAMETERS
+    __SUPERCLASS     :
+    __DYNASTY        : __PARAMETERS
+    __RELPATH        :
+    __PROPERTY_COUNT : 3
+    __DERIVATION     : {}
+    __SERVER         :
+    __NAMESPACE      :
+    __PATH           :
+    Domain           : DOMAIN01
+    ReturnValue      : 0
+    User             : user01
+
+    This command shows how to find the owner of a process. Because the
+    System.Diagnostics.Process object that Get-Process returns does not have a
+    property or method that returns the process owner, the command uses the
+    Get-WmiObject cmdlet to get a Win32_Process object that represents the same
+    process.
+
+    The first command uses Get-WmiObject to get the PowerShell process. It saves
+    it in the $P variable.
+
+    The second command uses the GetOwner method to get the owner of the process in
+    $P. The command reveals that the owner is Domain01\user01.
+    Example 9: Use an automatic variable to identify the process hosting the
+    current session
+
+    PS C:\>Get-Process powershell
+
+
+
+
+
+    Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
+    -------  ------    -----      ----- -----   ------     -- -----------
+    308      26        52308      61780   567     3.18   5632 powershell
+    377      26        62676      63384   575     3.88   5888 powershell PS
+    C:\>Get-Process -Id $pid
+
+
+
+    Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
+    -------  ------    -----      ----- -----   ------     -- -----------
+    396      26        56488      57236   575     3.90   5888 powershell
+
+    These commands show how to use the $pid automatic variable to identify the
+    process that is hosting the current Windows PowerShell session. You can use
+    this method to distinguish the host process from other Windows PowerShell
+    processes that you might want to stop or close. The first command gets all of
+    the Windows PowerShell processes in the current session.
+
+    The second command gets the Windows PowerShell process that is hosting the
+    current session.
+    Example 10: Get all processes that have a main window title and display them
+    in a table
+
+    PS C:\>Get-Process | where {$_.mainWindowTitle} | Format-Table id, name,
+    mainwindowtitle -autosize
+
+    This command gets all the processes that have a main window title, and it
+    displays them in a table with the process ID and the process name.
+
+    The mainWindowTitle property is just one of many useful properties of the
+    Process object that Get-Process returns. To view all of the properties, pipe
+    the results of a Get-Process command to the Get-Member cmdlet (get-process |
+    get-member).
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?linkid=821590
+    Debug-Process
+    Get-Process
+    Start-Process
+    Stop-Process
+    Wait-Process
+
+
+
+PS C:\Users\Juan Camilo> Get-Process | Select-Object -Property "id"
+
+   Id
+   --
+10384
+ 1568
+10468
+ 3848
+10184
+10248
+12332
+ 3520
+ 3732
+ 8628
+ 8760
+10012
+10108
+10916
+10972
+11016
+11076
+15636
+16584
+17604
+19084
+20132
+20368
+11808
+  680
+  800
+ 6460
+ 3824
+ 1464
+ 5468
+ 1156
+ 5024
+ 1700
+10476
+ 5928
+  552
+  624
+ 8448
+10064
+ 6044
+ 3928
+16336
+13796
+    0
+ 2380
+ 1868
+ 4832
+ 4200
+ 4440
+10036
+ 4092
+ 9184
+10648
+ 9880
+ 8648
+  944
+ 2632
+ 9288
+ 1876
+ 2496
+ 3840
+ 4052
+ 1180
+10444
+12276
+15948
+ 7032
+ 8924
+ 8616
+ 8916
+ 2868
+ 8376
+ 7936
+  120
+10188
+ 1260
+ 9752
+  620
+ 5692
+ 7180
+ 7228
+ 7808
+ 8968
+10484
+11568
+12924
+13096
+13928
+ 2756
+ 7316
+14296
+ 5312
+ 7460
+10236
+  856
+  336
+ 8776
+10456
+ 1888
+ 8256
+ 8280
+  444
+13164
+ 3176
+ 3448
+  544
+  812
+  996
+ 1040
+ 1048
+ 1096
+ 1300
+ 1356
+ 1388
+ 1528
+ 1544
+ 1612
+ 1620
+ 1772
+ 1816
+ 1852
+ 1940
+ 1948
+ 1956
+ 1968
+ 2012
+ 2052
+ 2104
+ 2276
+ 2316
+ 2356
+ 2420
+ 2428
+ 2508
+ 2720
+ 2744
+ 2768
+ 2776
+ 2852
+ 3048
+ 3056
+ 3084
+ 3096
+ 3252
+ 3280
+ 3468
+ 3480
+ 3488
+ 3500
+ 3528
+ 3536
+ 3588
+ 3592
+ 3600
+ 3628
+ 3640
+ 3832
+ 3976
+ 4024
+ 4040
+ 4344
+ 4352
+ 4408
+ 5240
+ 5532
+ 5924
+ 5944
+ 6384
+ 6432
+ 6964
+ 8368
+ 8408
+ 9148
+ 9172
+ 9696
+10312
+10668
+11500
+11916
+12836
+12876
+16708
+18672
+    4
+ 7348
+11860
+ 5732
+ 6252
+ 4516
+11260
+ 6896
+ 9212
+ 3960
+ 4760
+  784
+  888
+11988
+13476
+ 6224
+ 9092
+10656
+ 8348
+15348
+
+
+PS C:\Users\Juan Camilo> Get-Process | Export-Csv csvSistema.csv -Delimiter ( Get-Culture).TextInfo.ListSeparator
+PS C:\Users\Juan Camilo> help ¨*random*
+>> ErrorTerminación(Get-Help): "Caracteres no válidos en la ruta de acceso."
+Get-Help : Caracteres no válidos en la ruta de acceso.
+En línea: 55 Carácter: 5
++     Get-Help @PSBoundParameters | more
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-Help], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : Caracteres no válidos en la ruta de acceso.
+En línea: 55 Carácter: 5
++     Get-Help @PSBoundParameters | more
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-Help], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Comman
+   ds.GetHelpCommand
+
+PS C:\Users\Juan Camilo> help ¨*random*
+PS C:\Users\Juan Camilo> help *random*
+
+NOMBRE
+    Get-Random
+
+SINOPSIS
+    Gets a random number, or selects objects randomly from a collection.
+
+
+SINTAXIS
+    Get-Random [-InputObject] <Object[]> [-Count <Int32>] [-SetSeed <Int32>]
+    [<CommonParameters>]
+
+    Get-Random [[-Maximum] <Object>] [-Minimum <Object>] [-SetSeed <Int32>]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Random cmdlet gets a randomly selected number. If you submit a
+    collection of objects to Get-Random , it gets one or more randomly selected
+    objects from the collection.
+
+    Without parameters or input, a Get-Random command returns a randomly selected
+    32-bit unsigned integer between 0 (zero) and Int32.MaxValue (0x7FFFFFFF,
+    2,147,483,647).
+
+    You can use the parameters of Get-Random to specify a seed number, minimum and
+    maximum values, and the number of objects returned from a submitted collection.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821799
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-Random -examples".
+    Para obtener más información, escriba: "get-help Get-Random -detailed".
+    Para obtener información técnica, escriba: "get-help Get-Random -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-Random -online"
+
+
+PS C:\Users\Juan Camilo> help *date*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Update-Help                       Cmdlet    Microsoft.PowerShell.Core Downloads ...
+Get-Date                          Cmdlet    Microsoft.PowerShell.U... Gets the c...
+Set-Date                          Cmdlet    Microsoft.PowerShell.U... Changes th...
+Update-FormatData                 Cmdlet    Microsoft.PowerShell.U... Updates th...
+Update-List                       Cmdlet    Microsoft.PowerShell.U... Adds items...
+Update-TypeData                   Cmdlet    Microsoft.PowerShell.U... Updates th...
+Update-Script                     Function  PowerShellGet             ...
+Update-ModuleManifest             Function  PowerShellGet             ...
+Update-Module                     Function  PowerShellGet             ...
+Update-ScriptFileInfo             Function  PowerShellGet             ...
+Update-MpSignature                Function  Defender                  ...
+Update-WIMBootEntry               Cmdlet    Dism                      Update-WIM...
+Update-AutologgerConfig           Function  EventTracingManagement    ...
+Update-EtwTraceSession            Function  EventTracingManagement    ...
+Update-IscsiTarget                Function  iSCSI                     ...
+Update-IscsiTargetPortal          Function  iSCSI                     ...
+Update-NetIPsecRule               Function  NetSecurity               ...
+Update-DscConfiguration           Function  PSDesiredStateConfigur... ...
+Update-SmbMultichannelConnection  Function  SmbShare                  ...
+Update-Disk                       Function  Storage                   ...
+Update-StorageFirmware            Function  Storage                   ...
+Update-StoragePool                Function  Storage                   ...
+Update-StorageProviderCache       Function  Storage                   ...
+Update-HostStorageCache           Function  Storage                   ...
+Get-WindowsUpdateLog              Function  WindowsUpdate             ...
+Install-WUUpdates                 Function  WindowsUpdateProvider     ...
+Get-WULastScanSuccessDate         Function  WindowsUpdateProvider     ...
+Get-WULastInstallationDate        Function  WindowsUpdateProvider     ...
+
+
+PS C:\Users\Juan Camilo> Get-Date
+
+viernes, 28 de febrero de 2020 10:17:19 a. m.
+
+
+PS C:\Users\Juan Camilo> Get-Help Get-Date
+
+NOMBRE
+    Get-Date
+
+SINOPSIS
+    Gets the current date and time.
+
+
+SINTAXIS
+    Get-Date [[-Date] <DateTime>] [-Day <Int32>] [-DisplayHint {Date | Time |
+    DateTime}] [-Format <String>] [-Hour <Int32>] [-Millisecond <Int32>] [-Minute
+    <Int32>] [-Month <Int32>] [-Second <Int32>] [-Year <Int32>]
+    [<CommonParameters>]
+
+    Get-Date [[-Date] <DateTime>] [-Day <Int32>] [-DisplayHint {Date | Time |
+    DateTime}] [-Hour <Int32>] [-Millisecond <Int32>] [-Minute <Int32>] [-Month
+    <Int32>] [-Second <Int32>] [-UFormat <String>] [-Year <Int32>]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Date cmdlet gets a DateTime object that represents the current date or
+    a date that you specify. It can format the date and time in several Windows
+    and UNIX formats. You can use Get-Date to generate a date or time character
+    string, and then send the string to other cmdlets or programs.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821781
+    New-TimeSpan
+    Set-Date
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-Date -examples".
+    Para obtener más información, escriba: "get-help Get-Date -detailed".
+    Para obtener información técnica, escriba: "get-help Get-Date -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-Date -online"
+
+
+PS C:\Users\Juan Camilo> (Get-Date).DayOfWeek
+Friday
+PS C:\Users\Juan Camilo> help *hotfixes*
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Get-HotFix                        Cmdlet    Microsoft.PowerShell.M... Gets the h...
+about_Sequence                    HelpFile                            Describes ...
+about_Sequence                    HelpFile                            Describes ...
+
+
+PS C:\Users\Juan Camilo> Get-Help Get-Hostfix
+Get-Help : Get-Help no pudo encontrar Get-Hostfix en un archivo de Ayuda en esta sesión. Para descargar los temas de 
+Ayuda actualizados, escribe: "Update-Help". Para obtener Ayuda en pantalla, busca el tema de Ayuda en la biblioteca de 
+TechNet en https:/go.microsoft.com/fwlink/?LinkID=107116.
+En línea: 1 Carácter: 1
++ Get-Help Get-Hostfix
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : Get-Help no pudo encontrar Get-Hostfix en un archivo de Ayuda en esta
+sesión. Para descargar los temas de Ayuda actualizados, escribe: "Update-Help".
+Para obtener Ayuda en pantalla, busca el tema de Ayuda en la biblioteca de TechNet
+en https:/go.microsoft.com/fwlink/?LinkID=107116.
+En línea: 1 Carácter: 1
++ Get-Help Get-Hostfix
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundExc
+   eption
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCo
+   mmand
+
+PS C:\Users\Juan Camilo> Get-Help Get-Hotfix
+
+NOMBRE
+    Get-HotFix
+
+SINOPSIS
+    Gets the hotfixes that have been applied to the local and remote computers.
+
+
+SINTAXIS
+    Get-HotFix [-ComputerName <String[]>] [-Credential <PSCredential>]
+    [-Description <String[]>] [<CommonParameters>]
+
+    Get-HotFix [[-Id] <String[]>] [-ComputerName <String[]>] [-Credential
+    <PSCredential>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Hotfix cmdlet gets hotfixes (also called updates) that have been
+    installed on either the local computer (or on specified remote computers) by
+    Windows Update, Microsoft Update, or Windows Server Update Services; the
+    cmdlet also gets hotfixes or updates that have been installed manually by
+    users.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821586
+    Win32_QuickFixEngineering http://go.microsoft.com/fwlink/?LinkID=145071
+    Get-ComputerRestorePoint
+    Add-Content
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-HotFix -examples".
+    Para obtener más información, escriba: "get-help Get-HotFix -detailed".
+    Para obtener información técnica, escriba: "get-help Get-HotFix -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-HotFix -online"
+
+
+PS C:\Users\Juan Camilo> Get-HotFix
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+LAPTOP-J7Q... Update           KB4534132     NT AUTHORITY\SYSTEM  7/02/2020 12:0...
+LAPTOP-J7Q... Security Update  KB4498523     NT AUTHORITY\SYSTEM  14/06/2019 12:...
+LAPTOP-J7Q... Security Update  KB4503308     NT AUTHORITY\SYSTEM  16/06/2019 12:...
+LAPTOP-J7Q... Security Update  KB4506933     NT AUTHORITY\SYSTEM  7/07/2019 12:0...
+LAPTOP-J7Q... Security Update  KB4508433     NT AUTHORITY\SYSTEM  6/08/2019 12:0...
+LAPTOP-J7Q... Security Update  KB4509096     NT AUTHORITY\SYSTEM  10/07/2019 12:...
+LAPTOP-J7Q... Security Update  KB4515383     NT AUTHORITY\SYSTEM  13/09/2019 12:...
+LAPTOP-J7Q... Security Update  KB4516115     NT AUTHORITY\SYSTEM  13/09/2019 12:...
+LAPTOP-J7Q... Update           KB4517245     NT AUTHORITY\SYSTEM  28/11/2019 12:...
+LAPTOP-J7Q... Security Update  KB4521863     NT AUTHORITY\SYSTEM  10/10/2019 12:...
+LAPTOP-J7Q... Security Update  KB4524569     NT AUTHORITY\SYSTEM  14/11/2019 12:...
+LAPTOP-J7Q... Security Update  KB4528759     NT AUTHORITY\SYSTEM  17/01/2020 12:...
+LAPTOP-J7Q... Security Update  KB4537759     NT AUTHORITY\SYSTEM  12/02/2020 12:...
+LAPTOP-J7Q... Security Update  KB4538674     NT AUTHORITY\SYSTEM  12/02/2020 12:...
+LAPTOP-J7Q... Update           KB4532693     NT AUTHORITY\SYSTEM  12/02/2020 12:...
+
+
+PS C:\Users\Juan Camilo> Get-HotFix | Sort-Object -Property InstalledOn
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+LAPTOP-J7Q... Security Update  KB4498523     NT AUTHORITY\SYSTEM  14/06/2019 12:...
+LAPTOP-J7Q... Security Update  KB4503308     NT AUTHORITY\SYSTEM  16/06/2019 12:...
+LAPTOP-J7Q... Security Update  KB4506933     NT AUTHORITY\SYSTEM  7/07/2019 12:0...
+LAPTOP-J7Q... Security Update  KB4509096     NT AUTHORITY\SYSTEM  10/07/2019 12:...
+LAPTOP-J7Q... Security Update  KB4508433     NT AUTHORITY\SYSTEM  6/08/2019 12:0...
+LAPTOP-J7Q... Security Update  KB4515383     NT AUTHORITY\SYSTEM  13/09/2019 12:...
+LAPTOP-J7Q... Security Update  KB4516115     NT AUTHORITY\SYSTEM  13/09/2019 12:...
+LAPTOP-J7Q... Security Update  KB4521863     NT AUTHORITY\SYSTEM  10/10/2019 12:...
+LAPTOP-J7Q... Security Update  KB4524569     NT AUTHORITY\SYSTEM  14/11/2019 12:...
+LAPTOP-J7Q... Update           KB4517245     NT AUTHORITY\SYSTEM  28/11/2019 12:...
+LAPTOP-J7Q... Security Update  KB4528759     NT AUTHORITY\SYSTEM  17/01/2020 12:...
+LAPTOP-J7Q... Update           KB4534132     NT AUTHORITY\SYSTEM  7/02/2020 12:0...
+LAPTOP-J7Q... Security Update  KB4537759     NT AUTHORITY\SYSTEM  12/02/2020 12:...
+LAPTOP-J7Q... Security Update  KB4538674     NT AUTHORITY\SYSTEM  12/02/2020 12:...
+LAPTOP-J7Q... Update           KB4532693     NT AUTHORITY\SYSTEM  12/02/2020 12:...
+
+
+PS C:\Users\Juan Camilo> Get-HotFix | Sort-Object -Property InstalledOn | Format-Table -Property InstalledOn, Installedby, hotfixid
+
+InstalledOn               Installedby         hotfixid
+-----------               -----------         --------
+14/06/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4498523
+16/06/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4503308
+7/07/2019 12:00:00 a. m.  NT AUTHORITY\SYSTEM KB4506933
+10/07/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4509096
+6/08/2019 12:00:00 a. m.  NT AUTHORITY\SYSTEM KB4508433
+13/09/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4515383
+13/09/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4516115
+10/10/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4521863
+14/11/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4524569
+28/11/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4517245
+17/01/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4528759
+7/02/2020 12:00:00 a. m.  NT AUTHORITY\SYSTEM KB4534132
+12/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4537759
+12/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4538674
+12/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4532693
+
+
+PS C:\Users\Juan Camilo> Get-HotFix | Sort-Object -Property description | Format-Table -Property description, hotfixid, installedon
+
+description     hotfixid  InstalledOn
+-----------     --------  -----------
+Security Update KB4498523 14/06/2019 12:00:00 a. m.
+Security Update KB4503308 16/06/2019 12:00:00 a. m.
+Security Update KB4506933 7/07/2019 12:00:00 a. m.
+Security Update KB4508433 6/08/2019 12:00:00 a. m.
+Security Update KB4509096 10/07/2019 12:00:00 a. m.
+Security Update KB4515383 13/09/2019 12:00:00 a. m.
+Security Update KB4516115 13/09/2019 12:00:00 a. m.
+Security Update KB4521863 10/10/2019 12:00:00 a. m.
+Security Update KB4524569 14/11/2019 12:00:00 a. m.
+Security Update KB4528759 17/01/2020 12:00:00 a. m.
+Security Update KB4537759 12/02/2020 12:00:00 a. m.
+Security Update KB4538674 12/02/2020 12:00:00 a. m.
+Update          KB4534132 7/02/2020 12:00:00 a. m.
+Update          KB4517245 28/11/2019 12:00:00 a. m.
+Update          KB4532693 12/02/2020 12:00:00 a. m.
+
+
+PS C:\Users\Juan Camilo> Get-HotFix | Sort-Object -Property description | Format-Table -Property description, hotfixid, installedon
+
+description     hotfixid  InstalledOn
+-----------     --------  -----------
+Security Update KB4498523 14/06/2019 12:00:00 a. m.
+Security Update KB4503308 16/06/2019 12:00:00 a. m.
+Security Update KB4506933 7/07/2019 12:00:00 a. m.
+Security Update KB4508433 6/08/2019 12:00:00 a. m.
+Security Update KB4509096 10/07/2019 12:00:00 a. m.
+Security Update KB4515383 13/09/2019 12:00:00 a. m.
+Security Update KB4516115 13/09/2019 12:00:00 a. m.
+Security Update KB4521863 10/10/2019 12:00:00 a. m.
+Security Update KB4524569 14/11/2019 12:00:00 a. m.
+Security Update KB4528759 17/01/2020 12:00:00 a. m.
+Security Update KB4537759 12/02/2020 12:00:00 a. m.
+Security Update KB4538674 12/02/2020 12:00:00 a. m.
+Update          KB4534132 7/02/2020 12:00:00 a. m.
+Update          KB4517245 28/11/2019 12:00:00 a. m.
+Update          KB4532693 12/02/2020 12:00:00 a. m.
+
+
+PS C:\Users\Juan Camilo> New-Item -Path C:\OEM -Name archivos.csv
+
+
+    Directorio: C:\OEM
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----    28/02/2020  10:39 a. m.              0 archivos.csv
+
+
+PS C:\Users\Juan Camilo> Get-HotFix | Sort-Object -Property description | Format-Table -Property description, hotfixid, installedon | Export-Csv -Path C:\OEM\archivos.csv
+PS C:\Users\Juan Camilo> New-Item -Path C:\OEM -Name hotfixes.html
+
+
+    Directorio: C:\OEM
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----    28/02/2020  10:41 a. m.              0 hotfixes.html
+
+
+PS C:\Users\Juan Camilo> New-Item -Path C:\OEM -Name hotfixes.html
+New-Item : El archivo 'C:\OEM\hotfixes.html' ya existe.
+En línea: 1 Carácter: 1
++ New-Item -Path C:\OEM -Name hotfixes.html
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\OEM\hotfixes.html:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : El archivo 'C:\OEM\hotfixes.html' ya existe.
+En línea: 1 Carácter: 1
++ New-Item -Path C:\OEM -Name hotfixes.html
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\OEM\hotfixes.html:String) [New-Item]
+   , IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItem
+   Command
+
+PS C:\Users\Juan Camilo> Import-Csv -Path C:\OEM\archivos.csv | ConvertTo-Html | Out-File -FilePath C:\OEM\hotfixes.html
+PS C:\Users\Juan Camilo> Get-HotFix | Sort -Property description | Format-Table -Property description, hotfixid, installedon | Export-Csv -Path C:\OEM\archivos.csv
+PS C:\Users\Juan Camilo> Get-HotFix | Sort -Property description | Format-Table -Property description, hotfixid, installedon
+
+description     hotfixid  InstalledOn
+-----------     --------  -----------
+Security Update KB4498523 14/06/2019 12:00:00 a. m.
+Security Update KB4503308 16/06/2019 12:00:00 a. m.
+Security Update KB4506933 7/07/2019 12:00:00 a. m.
+Security Update KB4508433 6/08/2019 12:00:00 a. m.
+Security Update KB4509096 10/07/2019 12:00:00 a. m.
+Security Update KB4515383 13/09/2019 12:00:00 a. m.
+Security Update KB4516115 13/09/2019 12:00:00 a. m.
+Security Update KB4521863 10/10/2019 12:00:00 a. m.
+Security Update KB4524569 14/11/2019 12:00:00 a. m.
+Security Update KB4528759 17/01/2020 12:00:00 a. m.
+Security Update KB4537759 12/02/2020 12:00:00 a. m.
+Security Update KB4538674 12/02/2020 12:00:00 a. m.
+Update          KB4534132 7/02/2020 12:00:00 a. m.
+Update          KB4517245 28/11/2019 12:00:00 a. m.
+Update          KB4532693 12/02/2020 12:00:00 a. m.
+
+
+PS C:\Users\Juan Camilo> Get-HotFix | Sort -Property description | Format-Table -Property description, hotfixid, installedon | Out-File -FilePath C:\OEM\archivos.csv
+PS C:\Users\Juan Camilo> Import-Csv -Path C:\OEM\archivos.csv | ConvertTo-Html | Out-File -FilePath C:\OEM\hotfixes.html
+ADVERTENCIA: No se especificaron uno o varios encabezados. Se usaron nombres predeterminados que empiezan por "H" en lugar de los encabezados que faltan.
+PS C:\Users\Juan Camilo> Get-EventLog -LogName System -Newest 50
+
+   Index Time          EntryType   Source                 InstanceID Message
+   ----- ----          ---------   ------                 ---------- -------
+   25828 feb. 28 09:26 Information Microsoft-Windows...            1 El sistema ...
+   25827 feb. 28 09:26 Information Microsoft-Windows...          130 No se encon...
+   25826 feb. 28 09:26 Information Microsoft-Windows...          131 No se encon...
+   25825 feb. 28 09:26 Information Microsoft-Windows...            1 Posible det...
+   25824 feb. 28 09:15 Information Microsoft-Windows...          107 No se encon...
+   25823 feb. 28 09:14 Information Microsoft-Windows...           42 No se encon...
+   25822 feb. 28 09:14 Information Microsoft-Windows...           12 El proceso ...
+   25821 feb. 28 09:03 Information Microsoft-Windows...          105 No se encon...
+   25820 feb. 28 08:42 Warning     DCOM                        10016 No se encon...
+   25819 feb. 28 08:36 Information Microsoft-Windows...           16 No se encon...
+   25818 feb. 28 08:33 Warning     Microsoft-Windows...         1014 Se agotó el...
+   25817 feb. 28 08:14 Information Microsoft-Windows...           16 No se encon...
+   25816 feb. 28 08:06 Information Service Control M...   1073748864 El tipo de ...
+   25815 feb. 28 07:47 Information Microsoft-Windows...            1 El sistema ...
+   25814 feb. 28 07:47 Information Microsoft-Windows...          130 No se encon...
+   25813 feb. 28 07:47 Information Microsoft-Windows...          131 No se encon...
+   25812 feb. 28 07:47 Information Microsoft-Windows...            1 Posible det...
+   25811 feb. 28 00:03 Information Microsoft-Windows...          107 No se encon...
+   25810 feb. 28 00:03 Information Microsoft-Windows...           42 No se encon...
+   25809 feb. 28 00:03 Warning     DCOM                        10016 No se encon...
+   25808 feb. 28 00:03 Information Microsoft-Windows...            1 El sistema ...
+   25807 feb. 28 00:03 Information Microsoft-Windows...          130 No se encon...
+   25806 feb. 28 00:03 Information Microsoft-Windows...          131 No se encon...
+   25805 feb. 28 00:03 Information Microsoft-Windows...            1 Posible det...
+   25804 feb. 27 17:59 Information Microsoft-Windows...          107 No se encon...
+   25803 feb. 27 17:59 Information Microsoft-Windows...           42 No se encon...
+   25802 feb. 27 17:59 Information Microsoft-Windows...           12 El proceso ...
+   25801 feb. 27 17:54 Warning     DCOM                        10016 No se encon...
+   25800 feb. 27 17:25 Information Service Control M...   1073748864 El tipo de ...
+   25799 feb. 27 17:23 Information Service Control M...   1073748864 El tipo de ...
+   25798 feb. 27 17:22 Information Service Control M...   1073748864 El tipo de ...
+   25797 feb. 27 17:20 Information Microsoft-Windows...           16 No se encon...
+   25796 feb. 27 17:20 Information Microsoft-Windows...            1 El sistema ...
+   25795 feb. 27 17:19 Information Microsoft-Windows...          130 No se encon...
+   25794 feb. 27 17:19 Information Microsoft-Windows...          131 No se encon...
+   25793 feb. 27 17:19 Information Microsoft-Windows...            1 Posible det...
+   25792 feb. 27 14:00 Information Microsoft-Windows...          107 No se encon...
+   25791 feb. 27 14:00 Information Microsoft-Windows...           42 No se encon...
+   25790 feb. 27 14:00 Information Microsoft-Windows...           12 El proceso ...
+   25789 feb. 27 13:59 Information Service Control M...   1073748864 El tipo de ...
+   25788 feb. 27 12:00 Information EventLog               2147489661 El tiempo l...
+   25787 feb. 27 11:55 Information Service Control M...   1073748864 El tipo de ...
+   25786 feb. 27 11:53 Information Service Control M...   1073748864 El tipo de ...
+   25785 feb. 27 11:50 Information Microsoft-Windows...          105 No se encon...
+   25784 feb. 27 11:18 Information Microsoft-Windows...           16 No se encon...
+   25783 feb. 27 11:17 Information Microsoft-Windows...           16 No se encon...
+   25782 feb. 27 11:15 Information Microsoft-Windows...           16 No se encon...
+   25781 feb. 27 11:14 Information Microsoft-Windows...           16 No se encon...
+   25780 feb. 27 11:13 Information Microsoft-Windows...           98 No se encon...
+   25779 feb. 27 11:13 Information Service Control M...   1073748864 El tipo de ...
+
+
+PS C:\Users\Juan Camilo> New-Item -Path 'C:\Users\Juan Camilo\Desktop' -Name entradas.txt
+
+
+    Directorio: C:\Users\Juan Camilo\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----    28/02/2020  10:55 a. m.              0 entradas.txt
+
+
+PS C:\Users\Juan Camilo> -LogName System -Newest 50 | sort -Property TimeGenerated | sort -Property id -Descending | Select-Object -Property index, TimeGenerated, Source | Out-File -FilePath 'C:\Users\Juan Camilo\Desktop\entradas.txt'
+-LogName : El término '-LogName' no se reconoce como nombre de un cmdlet, función, archivo de script o programa 
+ejecutable. Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es 
+correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ -LogName System -Newest 50 | sort -Property TimeGenerated | sort -Pro ...
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (-LogName:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+-LogName : El término '-LogName' no se reconoce como nombre de un cmdlet, función,
+archivo de script o programa ejecutable. Compruebe si escribió correctamente el
+nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ -LogName System -Newest 50 | sort -Property TimeGenerated | sort -Pro ...
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (-LogName:String) [], CommandNotFoun
+   dException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Juan Camilo> Get-EventLog -LogName System -Newest 50 | sort -Property TimeGenerated | sort -Property id -Descending | Select-Object -Property index, TimeGenerated, Source | Out-File -FilePath 'C:\Users\Juan Camilo\Desktop\entradas.txt'
+PS C:\Users\Juan Camilo> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20200228110211
+**********************
